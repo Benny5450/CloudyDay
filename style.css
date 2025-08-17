@@ -1,0 +1,103 @@
+/* MAGNOLIA=#EAE6F0
+GLACOUS=#6C83B6
+SKYMAGENTA=#CC86B1
+ROSETOUPE=#844F5B
+COOLGREY=#878598
+POWDERBLUE=#ABBDE5 */
+
+html, body {
+  height: 100%;  /* Make sure the body takes up the full height of the page */
+  margin: 0;     /* Remove any default margin */
+  background-color: #ECFEFE; /* Your desired background color */
+  font: "Dancing Script";
+}
+
+h1{
+    background-color: #ECFEFE;
+    color: #878598;
+    text-align: center;
+    font-size: 96pt;
+    font: "Dancing Script";
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+    color: #CC86B1;
+    background-color: #ECFEFE;
+    font: "Dancing Script";
+    font-size: 48px;
+}
+
+
+.main-link{
+    
+    padding: 20px;
+    text-align: center;   
+}
+
+.link-button {
+  
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 48pt;
+  text-decoration: none;
+  border-radius: 12px; /* Soft edges */
+  text-align: center;
+  cursor: pointer;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;               
+  flex-wrap: wrap;         
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  min-height: 100vh;        
+}
+
+form {
+  text-align: center;      
+}
+
+
+.product-link {
+  width: 217px;
+  height: 300px;
+}
+
+.dancing-script-family {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h2{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 96pt;
+  text-align: center;
+}
+
+form {
+  text-align: center; /* centers labels + inline elements */
+}
+
+form input,
+form textarea,
+form button {
+  display: block;       /* puts them on their own line */
+  margin: 0 auto 15px;  /* centers them horizontally */
+  width: 60%;           /* adjust width as needed */
+  max-width: 400px;     /* optional: limit large screens */
+}
