@@ -11,6 +11,60 @@ html, body {
   background-color: #ECFEFE; /* Your desired background color */
   font: "Dancing Script";
 }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* top menu items go side by side */
+  background: #333;
+}
+
+nav ul li {
+  position: relative; /* needed for dropdown positioning */
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background: #444;
+}
+
+/* Hide dropdown by default */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;   /* sit just below parent */
+  left: 0;
+  background: #444;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 180px; /* controls submenu width */
+  z-index: 1000;
+  flex-direction: column; /* stack vertically */
+}
+
+/* Submenu links stacked */
+nav ul li ul li a {
+  padding: 10px 15px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+nav ul li ul li a:hover {
+  background: #555;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover > ul {
+  display: block;
+}
+
 
 h1{
     background-color: #ECFEFE;

@@ -3,31 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horizontal Navigation Menu</title>
+  <title>Expandable Nav Example</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
+    nav {
+      background: #333;
+      padding: 0;
     }
-
-    /* Navigation bar container */
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      position: relative; /* Needed for dropdown positioning */
+    }
+    nav ul li a {
+      display: block;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+    }
     
   </style>
 </head>
 <body>
-
-  <!-- Navigation menu -->
-  
-
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Badges & Reels</a>
+        <ul>
+          <li><a href="#">Everyday</a></li>
+          <li><a href="#">Nurse</a></li>
+          <li><a href="#">Holidays</a></li>
+          <li><a href="#">Discounted</a></li>
+          <li><a href="#">Summer</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Garden Stakes</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 </body>
 </html>
 
-<h2>
+<nav>
         <ul>
-            <li class="dancing-script-family"><a href="./pages/everyday.html"/>Everyday</li>
-            <li class="dancing-script-family"><a href="./pages/nurse.html"/>Nurse</li>
-            <li class="dancing-script-family"><a href="./pages/holidays.html"/>Holidays</li>
-            <li class="dancing-script-family"><a href="./pages/discounted.html"/>Discounted</li>
-            <li class="dancing-script-family"><a href="./pages/summer.html"/>Summer</li>
+            <li><a href=>Everyday</a></li>
+            <li><a href=>Nurse</a></li>
+            <li><a href=>Holidays</a></li>
+            <li><a href=>Discounted</a></li>
+            <li><a href=>Summer</a></li>
         </ul>
-    </h2>
+    </nav>
