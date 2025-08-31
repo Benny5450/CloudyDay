@@ -88,7 +88,46 @@ h2{
   font-size: 96pt;
   text-align: center;
 }
+nav {
+      background-color:  #ECFEFE;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
 
+    /* Navigation list */
+    nav ul {
+      display: flex;            
+      justify-content: center;   
+      list-style: none;          
+      margin: 0 20pt;
+      padding: 0;
+      font-size: 64pt;
+    }
+
+    /* Each nav item */
+    nav li {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        text-align: center;
+        margin: 0pt 20pt
+    }
+
+    /* Links */
+    nav a {
+      display: block;
+      padding: 20px 0;
+      text-decoration: none;
+      color: #878598;
+      font-size: 64px;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+
+    /* Hover effect */
+    nav a:hover {
+      color: #ff9800;
+      border-bottom: 2px solid #ff9800;
+    }
 form {
   text-align: center; /* centers labels + inline elements */
 }
