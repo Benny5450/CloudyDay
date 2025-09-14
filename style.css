@@ -9,7 +9,7 @@ html, body {
   height: 100%;  /* Make sure the body takes up the full height of the page */
   margin: 0;     /* Remove any default margin */
   background-color: #ECFEFE; /* Your desired background color */
-  font: "Dancing Script";
+  font: "Amatic SC";
 }
 nav ul {
   list-style: none;
@@ -71,7 +71,7 @@ h1{
     color: #878598;
     text-align: center;
     font-size: 96pt;
-    font: "Dancing Script";
+    font: "Amatic SC";
 }
 
 ul{
@@ -79,7 +79,7 @@ ul{
     text-align: center;
     color: #CC86B1;
     background-color: #ECFEFE;
-    font: "Dancing Script";
+    font: "Amatic SC";
     font-size: 48px;
 }
 
@@ -96,7 +96,7 @@ ul{
   padding: 10px 20px;
   background-color: #2980b9;
   color: white;
-  font-family: "Dancing Script", cursive;
+  font-family: "Amatic SC", cursive;
   font-size: 48pt;
   text-decoration: none;
   border-radius: 12px; /* Soft edges */
@@ -129,13 +129,13 @@ form {
 }
 
 .dancing-script-family {
-  font-family: "Dancing Script", cursive;
+  font-family: "Amatic SC", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 h2{
-  font-family: "Dancing Script", cursive;
+  font-family: "Amatic SC", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -159,7 +159,7 @@ nav {
 
     /* Each nav item */
     nav li {
-        font-family: "Dancing Script", cursive;
+        font-family: "Amatic SC", cursive;
         font-optical-sizing: auto;
         font-weight: 800;
         font-style: normal;
@@ -184,6 +184,17 @@ nav {
     }
 form {
   text-align: center; /* centers labels + inline elements */
+}
+.amatic-sc-regular {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amatic-sc-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 form input,
