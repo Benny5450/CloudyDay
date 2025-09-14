@@ -1,0 +1,3 @@
+[submodule "CloudyDay"]
+    path = CloudyDay
+    url = https://github.com/benny5450/CloudyDay.git
