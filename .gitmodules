@@ -1,1 +1,4 @@
-url = https://github.com/Benny5450/CloudyDay.git
+[submodule "CloudyDay"]
+    path = CloudyDay
+    url = https://github.com/<username>/<repo>.git
+
