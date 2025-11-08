@@ -1,24 +1,29 @@
-import { Resend } from resend
-
 export async function onRequestPost(context) {
-  const formData = await context.request.formData()
-  const name = formData.get("name")
-  const email = formData.get("email")
-  const message = formData.get("message")
+  const formData = await context.request.formData();
+  const name = formData.get("name");
+  const email = formData.get("email");
+  const message = formData.get("message");
 
-  // initialize Resend client with your API key stored in Cloudflare secret
-  const resend = new Resend(context.env.RESEND_API_KEY)
+  const payload = {
+    from: "Cloudy Day Crafts <no-reply@cloudydaycrafts.com.com>",
+    to: ["cloudydaycraft@gmail.com"],
+    subject: `New contact form message from ${name}`,
+    text: `From: ${name} <${email}>\n\n${message}`,
+  };
 
-  try {
-    await resend.emails.send({
-      from: "Cloudy Day Crafts <no-reply@cloudydaycrafts.com.com>",
-      to: "cloudydaycraft@gmail.com",     // 👈 this is where you receive the message
-      subject: `New contact from ${name}`,
-      text: `From: ${name} <${email}>\n\n${message}`
-    })
+  const response = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${context.env.RESEND_API_KEY}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
 
-    return new Response("Message sent!", { status: 200 })
-  } catch (error) {
-    return new Response("Error sending email: " + error.message, { status: 500 })
+  if (!response.ok) {
+    const error = await response.text();
+    return new Response("Error sending email: " + error, { status: 500 });
   }
+
+  return new Response("Email sent successfully!", { status: 200 });
 }
