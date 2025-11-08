@@ -5,7 +5,7 @@ export async function onRequestPost(context) {
   const message = formData.get("message");
 
   const payload = {
-    from: "Cloudy Day Crafts <no-reply@cloudydaycrafts.com.com>",
+    from: "Cloudy Day Crafts <no-reply@cloudydaycrafts.com>",
     to: ["cloudydaycraft@gmail.com"],
     subject: `New contact form message from ${name}`,
     text: `From: ${name} <${email}>\n\n${message}`,
