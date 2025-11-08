@@ -1,4 +1,4 @@
-import { Resend } from 'resend'
+import { Resend } from resend
 
 export async function onRequestPost(context) {
   const formData = await context.request.formData()
