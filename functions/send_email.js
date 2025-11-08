@@ -11,8 +11,8 @@ export async function onRequestPost(context) {
 
   try {
     await resend.emails.send({
-      from: "Your Site <no-reply@yourdomain.com>",
-      to: "you@yourdomain.com",     // 👈 this is where you receive the message
+      from: "Cloudy Day Crafts <no-reply@cloudydaycrafts.com.com>",
+      to: "cloudydaycraft@gmail.com",     // 👈 this is where you receive the message
       subject: `New contact from ${name}`,
       text: `From: ${name} <${email}>\n\n${message}`
     })
